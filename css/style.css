@@ -1,0 +1,165 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Poppins&display=swap');
+
+body {
+    font-family: 'Monomaniac One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 1500px) {
+    html {
+        font-size: 100%
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 50%
+    }
+}
+
+@media (max-width: 770px) {
+    html {
+        font-size: 43.75%
+    }
+}
+
+@media (max-width: 615px) {
+    html {
+        font-size: 40%
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 35%
+    }
+}
+
+.main-header {
+    padding: 0;
+    margin: 0;
+}
+
+#particles-js {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: #000000;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.heading {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: normal;
+    width: fit-content;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fafafa;
+    font-weight: 300;
+    font-size: 40px;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
+.heading__line-1{
+    font-size: 4rem;
+}
+
+.heading__line-1{
+    letter-spacing: 2px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: clamp(1rem, 6vw, 4rem);
+
+}
+
+.heading__line-2{
+    letter-spacing: 2px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 3rem);
+}
+.highlight-text{
+    color: #9aceff;
+}
+
+.heading__line-1 span {
+    font-size: 4rem;
+}
+
+.heading__line-1,
+.heading__line-2 {
+    background-color: rgba(26, 26, 26, 0.25);
+    animation-duration: 1.4s;
+    animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+}
+.heading__line-1 {
+    animation-name: moveInLeft;
+}
+.heading__line-2{
+ animation-name: moveInRight;
+}
+
+/* Animations */
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem)
+    }
+}
+
+.seperator-skew {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 93%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.header-2 {
+    position: absolute;
+    left: 50%;
+    align-items: center;
+    align-self: center;
+    font-size: 2rem;
+}
+
+.mob-nav {
+    position: relative;
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+    .mob-nav.responsive {
+        display: block;
+    }
+}
