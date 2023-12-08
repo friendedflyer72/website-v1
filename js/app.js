@@ -8,6 +8,9 @@ particlesJS.load('particles-js', 'particles.json', function() {
   console.log('particles.js loaded - callback');
 });
 */
+AOS.init({
+  duration: 1200,
+})
 
 particlesJS('particles-js',
   
